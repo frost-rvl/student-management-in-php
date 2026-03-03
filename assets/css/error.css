@@ -1,0 +1,39 @@
+.error-wrapper {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  animation: error 3s ease-in-out;
+}
+
+.error {
+  position: relative;
+  min-width: 100px;
+  width: max-content;
+  background-color: lightgray;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 2px 2px var(--main-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes error {
+    0% {
+        transform: translateY(0%);
+    }
+    20%,90% {
+        transform: translateY(130%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
